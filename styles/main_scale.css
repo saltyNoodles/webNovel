@@ -1,0 +1,53 @@
+body {
+	background: #000;
+	width:80%;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+}
+#container {
+	position:relative;
+	width:100%;
+	padding-bottom:75%;
+}
+
+#gameCanvas > div {
+	position:absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	
+
+}
+#background {
+	position:absolute;
+	background: #fff url(../res/images/bg.jpg);
+	background-size:100% auto;;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+#foreground {
+	position:absolute;
+	left:0;
+	bottom:0;
+	
+}
+#foreground img {
+	position:absolute;
+	max-with:: 500%;
+    width: auto;
+	left:0;
+	bottom:0;
+}
+#gameCanvas #content.adv{
+	position:absolute;
+	color:#fff;
+	height:25%;
+	top:75%;
+}
+#nameBox{
+	background:rgba(0,0,0,.5);
+	display: inline-block;
+	padding:4px;
+	
+}
+#textBox{
+	background:rgba(0,0,0,.5);
+	padding:4px;
+	height:100%;
+}

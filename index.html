@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<!--Load Stylesheets-->
+	<!--<link rel="alternative stylesheet" href="styles/main_fullscreen.css">
+	<link rel="stylesheet" href="styles/main_windowed.css">-->
+	
+	<!--Load Libraries-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!--Load other scripts-->
+	<script src="cfg.js"></script>
+	<script src="scripts/xmlR.js"></script>
+	<script src="scripts/main.js"></script>
+	<script>
+	xmlDoc=loadXMLDoc("game.xml");
+	x=xmlDoc.documentElement.childNodes;
+	
+	</script>
+</head>
+<body>
+	<div id="container">
+	<div id="gameCanvas">
+		<div id="background"></div>
+		<div id="foreground">
+			<div id="left" class="char"></div>
+			<div id="right" class="char"></div>
+			<div id="center" class="char"></div>
+		</div>
+		<div id="content" class="adv">
+			<div id="nameBox">Name</div>
+			<div id="textBox" onclick="nextStep()">
+			Something seems to be wrong! Try a different browser(like chrome or firefox)
+			</div>
+			<div id="menu"><span id="next"></span><a href="#" onclick="nextStep()">--></a></span><span id="pn"></span></div>
+		</div>
+	</div>
+	
+	</div>
+	<script>
+	window.onload = function() {
+		nextStep();
+	}
+	</script>
+</body>
+</html>

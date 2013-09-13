@@ -1,0 +1,23 @@
+<game title="My Game">
+<chapter number="1" title="The Beginning">
+	<scene bg="background.png">
+		<char img="erika.png" at="right"/>
+		<say name="Erika">Hello, and welcome to VNML!</say>
+		<say name="Erika" auto="5">This is a visual novel engine written entirely in Javascript and HTML! It allows you to do many things such a-</say>
+		<say name="Rick">HEY!</say>
+		<say name="Erika">...</say>
+		<char img="rick.png" at="left"/>
+		<say name="Rick">Haha, I can't let you explain this without me!</say>
+		<effect type="shake" duration="500"/>
+		<say name="Erika"><![CDATA[
+		<center><b><font size="10">WHAT DID YOU SAY?!</font></b></center>
+		]]></say>
+		<goto scene="2"></goto>
+	</scene>
+	<scene bg="bg.png">
+		<char img="erika.png" at="right" />
+		<say name="Erika">This is an example of a new scene.</say>
+		<say name="Rick">In VNML, you can create new scenes with a scene tag.</say>
+	</scene>
+</chapter>
+</game>

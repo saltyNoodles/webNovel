@@ -1,0 +1,85 @@
+body {
+	background: #000;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+	overflow: hidden;
+}
+#container {
+	position:absolute;
+	width:100%;
+	padding-bottom:75%;
+	top:0;
+	left:0;
+}
+
+#gameCanvas > div {
+	position:absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	
+
+}
+#background {
+	position:absolute;
+	background: #fff url(../res/images/bg.jpg);
+	background-size:100% auto;;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+#foreground {
+	position:absolute;
+	left:0;
+	bottom:0;
+	
+}
+#foreground img {
+	position:absolute;
+	width: 50%;
+    height: auto;
+	left:0;
+	bottom:0;
+}
+#gameCanvas #content.adv{
+	position:absolute;
+	color:#fff;
+	height:25%;
+	top:70%;
+}
+#nameBox{
+	background:rgba(0,0,0,.5);
+	display: inline-block;
+	padding:4px;
+	font-weight:bold;
+	
+}
+#textBox{
+	background:rgba(0,0,0,.5);
+	padding:4px;
+	height:100%;
+}
+#menu {
+	position:absolute;
+	bottom:-15px;
+	right:10px;
+	display:inline-block;
+	font-weight:bold;
+}
+#menu a{
+	text-decoration:none;
+	font-size:25px;
+	color:#fff;
+}
+#menu  a :hover {
+	font-size:20px;
+	color:rgb(50,50,50);
+}
+#foreground.char > div {
+	position:absolute;
+	display:inline;
+}
+#left {
+	float:left;
+}
+#center {
+	float:center;
+}
+#right {
+	float:right;
+}

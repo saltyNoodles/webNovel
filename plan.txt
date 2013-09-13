@@ -1,0 +1,18 @@
+Okay, the plan is to make a Visual Novel engine in HTML5 and Javascript. It may or may not use new HTML5 Elements.
+The features I am planning on adding, in the order of which I think of them, are listed below:
+
+FEATURES:
+	-NVL and ADV Modes
+	-Animation Support
+	-Stretch With Screen
+		-Keep Apsect Ratio
+	-saving
+	-background music/sfx
+	-menus
+	
+	
+Ideas:
+	-Custom scripting language
+		-Still has javaScript support(?)
+	-Just use JavaScript with custom functions
+	-Use XML like the older one, but with better support for scripting.
