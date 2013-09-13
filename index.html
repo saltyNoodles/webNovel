@@ -1,12 +1,9 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<!--Load Stylesheets-->
-	<!--<link rel="alternative stylesheet" href="styles/main_fullscreen.css">
-	<link rel="stylesheet" href="styles/main_windowed.css">-->
 	
-	<!--Load Libraries-->
+	<meta charset="UTF-8">
+	<title>My Game</title><!--Load Libraries-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<!--Load other scripts-->
 	<script src="cfg.js"></script>
@@ -15,7 +12,6 @@
 	<script>
 	xmlDoc=loadXMLDoc("game.xml");
 	x=xmlDoc.documentElement.childNodes;
-	
 	</script>
 </head>
 <body>
@@ -23,16 +19,29 @@
 	<div id="gameCanvas">
 		<div id="background"></div>
 		<div id="foreground">
-			<div id="left" class="char"></div>
-			<div id="right" class="char"></div>
-			<div id="center" class="char"></div>
+			<table style="height:100%; width:100%">
+				
+				<tr>
+					<td class="left" id="left">
+					
+					</td>
+					<td class="center" id="center">
+					
+					</td>
+					<td class="right" id="right">
+					
+					</td>
+				</tr>
+				
+			</table>
+			
 		</div>
 		<div id="content" class="adv">
 			<div id="nameBox">Name</div>
 			<div id="textBox" onclick="nextStep()">
 			Something seems to be wrong! Try a different browser like Chrome or Firefox.
 			</div>
-			<div id="menu"><span id="next"></span><a href="#" onclick="nextStep()">--></a></span><span id="pn"></span></div>
+			<div id="menu"><span id="next"><a href="#" onclick="nextStep()">==></a></span><span id="pn"></span></div>
 		</div>
 	</div>
 	

@@ -83,22 +83,28 @@ function nextStep() {
 	} else if (checkTag() == 'goto'){
 		alert("END")
 		
-	} else {nextStep();}
+	} else if(checkTag() == 'end') {
+		alert("The End")
+	
+	}else {nextStep();}
+	
 }
 function checkTag() {
 	xmlDoc=loadXMLDoc("game.xml");
 	x=xmlDoc.documentElement.childNodes;
 	//setName(x[1].nodeName);
-	if(x[chapter].childNodes[scene].childNodes[step].nodeName == "say" ) { // if say tag
-		tag = "say";
-	} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "char" ) { // if char tag
-		tag = "char";
-	} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "#text" ) { // if char tag
-		tag = "text";
-	} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "goto" ) { // if char tag
-		tag = "goto";
-	}
-	return tag;
+	if(x[chapter].childNodes[scene].childNodes[step] !== undefined) {
+		if(x[chapter].childNodes[scene].childNodes[step].nodeName == "say" ) { // if say tag
+			tag = "say";
+		} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "char" ) { // if char tag
+			tag = "char";
+		} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "#text" ) { // if char tag
+			tag = "text";
+		} else if(x[chapter].childNodes[scene].childNodes[step].nodeName == "goto" ) { // if char tag
+			tag = "goto";
+		}
+		return tag;
+	} return "end";
 }
 function nextScene() {
 	// Add to scene var

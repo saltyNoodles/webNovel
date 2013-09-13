@@ -21,7 +21,7 @@ body {
 #gameCanvas > div {
 	position:absolute;
 	top: 0; bottom: 0; left: 0; right: 0;
-	
+	overflow:hidden;
 
 }
 #background {
@@ -38,15 +38,12 @@ body {
 }
 #foreground img {
 	position:absolute;
-	/*width: 50%;
-    height: auto;*/
-	left:0;
 	bottom:0;
 }
 #gameCanvas #content.adv{
 	position:absolute;
 	color:#fff;
-	height:30%;
+	height:35%;
 	top:65%;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -71,7 +68,7 @@ body {
 }
 #menu {
 	position:absolute;
-	bottom:-15px;
+	bottom:3px;
 	right:10px;
 	display:inline-block;
 	font-weight:bold;
@@ -88,13 +85,4 @@ body {
 #foreground.char > div {
 	position:absolute;
 	display:inline;
-}
-#left {
-	float:left;
-}
-#center {
-	float:center;
-}
-#right {
-	float:right;
 }
