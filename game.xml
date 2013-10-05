@@ -1,24 +1,22 @@
 <game title="My Game">
-	<chapter number="1" title="The Beginning">
-		<scene bg="background.png">
-			<char img="girl.gif" at="right"/>
-			<char img="erika.png" at="center"/>
-			<say name="Erika">Hello, and welcome to webNovel!</say>
-			<say name="Erika" auto="5">This is a visual novel engine written entirely in Javascript and HTML! It allows you to do many things such a-</say>
-			<say name="Rick">HEY!</say>
-			<say name="Erika">...</say>
-			<char img="rick.gif" at="left"/>
-			<say name="Rick">Haha, I can't let you explain this without me!</say>
-			<effect type="shake" duration="500"/>
-			<say name="Erika"><![CDATA[
-			<center><b><font size="10">WHAT DID YOU SAY?!</font></b></center>
-			]]></say>
-			<goto scene="2"></goto>
-		</scene>
-		<scene bg="bg.png">
-			<char img="erika.png" at="right" />
-			<say name="Erika">This is an example of a new scene.</say>
-			<say name="Rick">In VNML, you can create new scenes with a scene tag.</say>
-		</scene>
-	</chapter>
+  <chapter number="1" title="The Beginning">
+    <scene bg="background.png">
+      <char img="erika.png" at="right"/>
+      <say name="Erika">Hello, and welcome to webNovel!</say>
+      <say name="Erika" auto="5">This is a visual novel engine written entirely in Javascript and HTML!</say>
+      <char img="rick.gif" at="left"/>
+      <say name="Rick">It's really easy!</say>
+      <effect type="shake" duration="500"/>
+      <say name="Erika">It allows you to create a visual novel with an easy to learn language called VNML.</say>
+      <say name="Rick">Unfortunately, it isn't even near completion at the moment, so you'll have to wait if you want to get anything out of it.</say>
+      <say name="Erika">Yeah, what he said. You can feel free to check out the code, however, and see what has been comlpeted. Also, if you want to contribute, please don't hesitate!</say>
+      <say name="Erika">Derrick doesn't have much free time to work on it, so he'll be really happy to find things being worked on by other people. </say>
+      <goto scene="2"></goto>
+    </scene>
+    <scene bg="bg.png">
+      <char img="erika.png" at="right" />
+      <say name="Erika">This is an example of a new scene.</say>
+      <say name="Rick">In VNML, you can create new scenes with a scene tag.</say>
+    </scene>
+  </chapter>
 </game>
