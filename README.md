@@ -1,4 +1,4 @@
 webNovel
 ====
 
-Easily create your own visual novels without programming knowledge and run them in a browser without flash or any plugins. Written completely in HTML and JavaScript.
+An old project I was working on in High School. Kept around only for archival reasons.
